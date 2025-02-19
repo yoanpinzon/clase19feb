@@ -2,15 +2,12 @@
 
 using namespace std;
 
-void intercambiar(int &x, int &y) {
-    int temp = x;
-    x = y;
-    y = temp;
-}
-
 int main() {
-    int a = 4, b = 5;
-    intercambiar(a, b);
-    cout << "Después de la función:\na = " << a << "\nb = " << b << endl;
+    //int *b = new int[5]{1,4,7,8,9};
+    int b[] = {1,4,7,8,9};
+    for ( int i = 0; i < 5; i++ ) {
+        cout << b[ i ] << endl;
+    }
+    //delete[] b;
     return 0;
 }
