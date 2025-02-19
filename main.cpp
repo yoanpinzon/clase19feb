@@ -2,15 +2,14 @@
 
 using namespace std;
 
+typedef struct Point Point;
+
+struct Point {
+    int x, y;
+};
+
 int main() {
-    try {
-        cout << "hola mundo ";
-        throw 4;
-        cout << "cruel" << endl;
-    }
-    catch ( int e ) {
-        cout << e << endl;
-    }
+    Point a{1,3}, b{2, 7}, c;
 
     return 0;
 }
