@@ -1,6 +1,12 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    for ( int i = 1; i < 30; i++ ) {
+        if ( i%3 ) continue;
+        cout << i << " ";
+        if ( i == 15 ) break;
+    }
     return 0;
 }
